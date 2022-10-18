@@ -6,7 +6,7 @@ from datetime import datetime
 
 def send2db():
     cred = credentials.Certificate("serviceAccountKey.json")
-    #firebase_admin.initialize_app(cred, {'databaseURL':'firebase-adminsdk-96ceh@myproject-3628a.iam.gserviceaccount.com'})
+    #firebase_admin.initialize_app(cred, {'databaseURL':''})
     db = firestore.client()
 
     
@@ -18,10 +18,4 @@ def send2db():
         u'timestamp':firestore.SERVER_TIMESTAMP,
         u'user':"host"
     })
-    # doc_ref.set({
-    #     u'time': str(current_time),
-    # })
-    # doc_ref = db.collection(u'location').document(u'QhyHZBPdz52rkAElYGbi')
-    # doc_ref.set({
-    #     u'floor': str(layer),
-    # })
+    
