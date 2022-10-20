@@ -14,7 +14,7 @@ def send2db():
     # 데이터 전송
     doc_ref = db.collection(u'messages').document()
     doc_ref.set({
-        u'message':"대출금 갚다",
+        u'message':"",
         u'timestamp':firestore.SERVER_TIMESTAMP,
         u'user':"host"
     })
